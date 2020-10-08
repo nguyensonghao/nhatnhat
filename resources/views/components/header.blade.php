@@ -56,9 +56,19 @@
                             <li>
                                 <a href="/">Trang chủ</a>
                             </li>
-
-                            <li class="gioithieu">
-                                <a href="/chuyen-muc/gioi-thieu/nhat-nhat-logistics">Giới thiệu</a>
+                            <li>
+                                <a href="/bang-gia">Bảng giá</a>
+                            </li>
+                            <li>
+                                <a href="/chinh-sach">Chính sách</a>
+                            </li>
+                            <li class="taichinh has-dropdown">
+                                <a href="/theo-doi-mvd">Theo dõi MVĐ</a>
+                                <ul class="dropdown-menu">
+                                    @foreach(\App\Vantaihang::all() as $menu)
+                                        <li><a target="_blank" href="{{$menu->link}}">{{$menu->name}}</a></li>
+                                    @endforeach
+                                </ul>
                             </li>
                         </ul>
                     </div>

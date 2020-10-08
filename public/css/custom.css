@@ -1,0 +1,48 @@
+#header .hd-top {
+    justify-content: end;
+}
+.chinh-sach-page .sec-above {
+    margin-top: 40px;
+}
+#modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#modal .modal-container {
+    background: white;
+    width: 700px;
+    height: 450px;
+    position: relative;
+}
+
+#modal .modal-header {
+    background: #036fd1;
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 10px;
+}
+#modal .modal-content {
+    padding: 20px;
+}
+#modal .modal-header p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#modal .modal-footer {
+    overflow: auto;
+    border-top: 1px solid #eeee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

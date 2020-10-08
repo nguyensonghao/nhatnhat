@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-</head>
-<body>
-    @include('components.header')
+@extends('layout')
+@section('title', 'Nhất nhất')
+@section('content')
     <main id="home">
         <div class="banner">
             <div class="sticky">
@@ -177,7 +170,6 @@
                                     <img src="/images/step-img1.png" alt="">
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -196,14 +188,14 @@
                         <div class="benefit-card">
                             <div class="img">
                                 <a href="javascript:;">
-                                    <img src="/images/benefit-img1.jpg" alt=""></a>
+                                    <img src="/images/benefit-img1.jpg" alt="">
+                                </a>
                             </div>
                             <div class="content">
                                 <h4 class="hd"><a href="">Khách hàng thân thiết</a></h4>
                                 <p>
                                     Tích điểm thành viên từ mỗi đơn hàng và nhận được ưu đãi về phí và nhiều ưu đãi khác cho các đơn sau
                                 </p>
-
                             </div>
                         </div>
                     </li>
@@ -211,14 +203,14 @@
                         <div class="benefit-card">
                             <div class="img">
                                 <a href="javascript:;">
-                                    <img src="/images/benefit-img2.jpg" alt=""></a>
+                                    <img src="/images/benefit-img2.jpg" alt="">
+                                </a>
                             </div>
                             <div class="content">
                                 <h4 class="hd"><a href="">Marketing &amp; Bán hàng</a></h4>
                                 <p>
                                     Hỗ trợ Quý khách kết nối tới các giải pháp Marketing &amp; bán hàng, cung cấp hệ sinh thái đầy đủ từ nhập hàng tới bán hàng và phân phối.
                                 </p>
-
                             </div>
                         </div>
                     </li>
@@ -226,14 +218,14 @@
                         <div class="benefit-card">
                             <div class="img">
                                 <a href="javascript:;">
-                                    <img src="/images/benefit-img3.jpg" alt=""></a>
+                                    <img src="/images/benefit-img3.jpg" alt="">
+                                </a>
                             </div>
                             <div class="content">
                                 <h4 class="hd"><a href="">Ưu đãi theo sản lượng tháng</a></h4>
                                 <p>
                                     Hoàn phí vận chuyển theo sản lượng đặt hàng theo từng tháng
                                 </p>
-
                             </div>
                         </div>
                     </li>
@@ -241,6 +233,4 @@
             </div>
         </div>
     </main>
-    @include('components.footer')
-</body>
-</html>
+@endsection
