@@ -19,9 +19,9 @@ Route::get('/bang-gia', function () {
     return view('index');
 });
 
-Route::get('/chinh-sach', function () {
-    return view('chinhsach');
-});
+Route::get('/chinh-sach', [
+    'uses' => 'UserController@chinhsach'
+]);
 
 Route::get('/theo-doi-mvd', function () {
     return view('index');
@@ -62,10 +62,25 @@ Route::prefix('admin')->group(function () {
         'uses'=> 'AdminController@removeMVD'
     ]);
 
+    Route::get('/chinhsua-mvd/{id}', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showEditMVD'
+    ]);
+
+    Route::post('/chinhsua-mvd', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionEditMVD'
+    ]);
+
     Route::get('/thong-bao', [
         'as' => 'thongbao',
         'middleware' => ['isLogin'],
         'uses'=> 'AdminController@showSetUpNoti'
+    ]);
+
+    Route::post('/thong-bao', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionSetUpNoti'
     ]);
 
     Route::get('/bang-gia', [
@@ -78,5 +93,11 @@ Route::prefix('admin')->group(function () {
         'as' => 'chinhsach',
         'middleware' => ['isLogin'],
         'uses'=> 'AdminController@showSetupChinhSach'
+    ]);
+
+    Route::post('/chinh-sach', [
+        'as' => 'chinhsach',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionSetupChinhSach'
     ]);
 });

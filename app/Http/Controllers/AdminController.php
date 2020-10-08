@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\User;
+use App\Storage;
 use App\Vantaihang;
 
 
@@ -31,19 +32,25 @@ class AdminController extends Controller
         }
     }
 
-    public function showSetUpNoti() {
-        return view('admin.thongbao');
-    }
-
     public function showSetupBanggia() {
         return view('admin.banggia');
     }
 
     public function showSetupChinhSach() {
-        return view('admin.chinhsach');
+        $nofi = Storage::where('key', 'chinhsach')->first();
+        $content = '';
+        if ($nofi) {
+            $content = $nofi->value;
+        }
+        return view('admin.chinhsach')->with('content', $content);
     }
 
     public function showLogin() {
+//        $user = new User();
+//        $user->name = 'Admin';
+//        $user->email = 'admin@gmail.com';
+//        $user->password = Hash::make('123456');
+//        $user->save();
         return view('admin.login');
     }
 
@@ -67,5 +74,68 @@ class AdminController extends Controller
         $mvd = Vantaihang::find($id);
         $mvd->delete();
         return back();
+    }
+
+    public function showEditMVD($id) {
+        $mvd = Vantaihang::find($id);
+        return view('admin.chinhsua-mvd')->with('mvd', $mvd);
+    }
+
+    public function actionEditMVD(Request $request) {
+        $id = $request['id'];
+        $mvd = Vantaihang::find($id);
+        $mvd->name = $request['name'];
+        $mvd->link = $request['link'];
+        if ($mvd->save()) {
+            return back()->with('success', 'Chỉnh sửa mã vận đơn thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa mã vận đơn.');
+        }
+    }
+
+    public function showSetUpNoti() {
+        $nofi = Storage::where('key', 'noti')->first();
+        $value = null;
+        if ($nofi) {
+            $value = $nofi->value;
+            $value = json_decode($value);
+        }
+        return view('admin.thongbao')->with('noti', $value);
+    }
+
+    public function actionSetUpNoti(Request $request) {
+        $isShow = $request['show-noti'];
+        $content = $request['content'];
+        $storage = Storage::where('key', 'noti')->first();
+        if (!$storage) {
+            $storage = new Storage();
+        }
+
+        $storage->key = 'noti';
+        $storage->value = json_encode([
+            'isShow' => $isShow,
+            'content' => $content
+        ]);
+
+        if ($storage->save()) {
+            return back()->with('success', 'Chỉnh sửa thông báo thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa thông báo.');
+        }
+    }
+
+    public function actionSetupChinhSach(Request $request) {
+        $storage = Storage::where('key', 'chinhsach')->first();
+        if (!$storage) {
+            $storage = new Storage();
+        }
+
+        $storage->key = 'chinhsach';
+        $storage->value = $request['content'];
+        if ($storage->save()) {
+            return back()->with('success', 'Chỉnh sửa chính sách thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa chính sách.');
+        }
     }
 }

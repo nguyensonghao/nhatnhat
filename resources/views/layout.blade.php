@@ -11,6 +11,6 @@
     @include('components.header')
     @yield('content')
     @include('components.footer')
-{{--    @include('components.modal')--}}
+    @include('components.modal')
 </body>
 </html>

@@ -9,5 +9,8 @@
                 <span class="line__icon"></span>
             </div>
         </div>
+        <div class="chinhsach-content">
+            {!! $content !!}
+        </div>
     </main>
 @endsection

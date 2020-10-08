@@ -23,7 +23,7 @@
                             </a>
                         </td>
                         <td>
-                            <button class="btn btn-primary btn-small">Chỉnh sửa</button>
+                            <a href="/admin/chinhsua-mvd/{{$mvd->id}}" class="btn btn-primary btn-small">Chỉnh sửa</a>
                             <a class="btn btn-danger btn-small btn-remove-mvd" href="/admin/xoa-mvd/{{$mvd->id}}">Xóa</a>
                         </td>
                     </tr>

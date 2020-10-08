@@ -12,6 +12,9 @@
     <div class="login-page">
         <form class="form-setup-noti" id="form-login" method="post" action="/admin/login">
             {{ csrf_field() }}
+            <div class="logo-container">
+                <img src="/images/header-logo.png" class="logo"/>
+            </div>
             <p class="title">Đăng nhập hệ thống</p>
             <div class="form-group">
                 <label>Email</label>
