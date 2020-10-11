@@ -13,4 +13,6 @@
     @include('components.footer')
     @include('components.modal')
 </body>
+<script src="{{ asset('libs/jquery-validation/lib/jquery-3.1.1.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </html>

@@ -1,7 +1,7 @@
 @extends('layout')
-@section('title', 'Chính sách')
+@section('title', 'Bảng giá')
 @section('content')
-    <main id="home" class="chinh-sach-page">
+    <main id="home" class="bang-gia-page">
         <div class="banner">
             <div class="sticky">
                 <div class="all" style="width: 100%;">
@@ -20,7 +20,7 @@
         </div>
         <div class="sec-above">
             <h3 class="tt-txt">
-                <span id="ContentPlaceHolder1_lblTitle">Chính sách</span></h3>
+                <span id="ContentPlaceHolder1_lblTitle">Bảng giá</span></h3>
             <div class="line-br">
                 <span class="line__icon"></span>
             </div>

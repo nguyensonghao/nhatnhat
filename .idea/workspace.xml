@@ -3,21 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="10872866-a649-4d00-9d9b-fecbbc02bdfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/nhatnhat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nhatnhat.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/chinhsach.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/chinhsach.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/them-mvd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/them-mvd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/thongbao.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/thongbao.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/banggia.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/banggia.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/chinhsach.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chinhsach.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout-admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout-admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -168,6 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601911260461</updated>
       <workItem from="1601911262724" duration="2358000" />
+      <workItem from="1602397836870" duration="3868000" />
     </task>
     <servers />
   </component>
@@ -179,7 +175,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

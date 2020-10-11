@@ -33,7 +33,27 @@ class AdminController extends Controller
     }
 
     public function showSetupBanggia() {
-        return view('admin.banggia');
+        $nofi = Storage::where('key', 'banggia')->first();
+        $content = '';
+        if ($nofi) {
+            $content = $nofi->value;
+        }
+        return view('admin.banggia')->with('content', $content);
+    }
+
+    public function actionSetupBanggia(Request $request) {
+        $storage = Storage::where('key', 'banggia')->first();
+        if (!$storage) {
+            $storage = new Storage();
+        }
+
+        $storage->key = 'banggia';
+        $storage->value = $request['content'];
+        if ($storage->save()) {
+            return back()->with('success', 'Chỉnh sửa bảng giá thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa bảng giá.');
+        }
     }
 
     public function showSetupChinhSach() {

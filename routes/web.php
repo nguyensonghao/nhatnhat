@@ -12,14 +12,17 @@
 */
 
 Route::get('/', [
+    'as' => 'home',
     'uses'=> 'UserController@showHomePage'
 ]);
 
-Route::get('/bang-gia', function () {
-    return view('index');
-});
+Route::get('/bang-gia', [
+    'as' => 'webbanggia',
+    'uses'=> 'UserController@showBanggia'
+]);
 
 Route::get('/chinh-sach', [
+    'as' => 'webchinhsach',
     'uses' => 'UserController@chinhsach'
 ]);
 
@@ -87,6 +90,11 @@ Route::prefix('admin')->group(function () {
         'as' => 'banggia',
         'middleware' => ['isLogin'],
         'uses'=> 'AdminController@showSetupBanggia'
+    ]);
+
+    Route::post('/bang-gia', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionSetupBanggia'
     ]);
 
     Route::get('/chinh-sach', [

@@ -69,4 +69,8 @@ $(document).ready(function () {
     $('#form-update-chinhsach #content').summernote({
         height: '380px'
     });
+
+    $('#form-update-banggia #content').summernote({
+        height: '600px'
+    });
 })

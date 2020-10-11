@@ -20,4 +20,14 @@ class UserController extends Controller
 
         return view('chinhsach')->with('content', $content);
     }
+
+    public function showBanggia() {
+        $storage = Storage::where('key', 'banggia')->first();
+        $content = '';
+        if ($storage) {
+            $content = $storage->value;
+        }
+
+        return view('banggia')->with('content', $content);
+    }
 }

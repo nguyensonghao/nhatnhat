@@ -53,13 +53,13 @@
                     <div class="nav-wrap">
                         <div class="nav-overlay"></div>
                         <ul class="nav-ul">
-                            <li>
+                            <li {!! (Route::is('home') ? 'class="current-menu-item"' : '') !!}>
                                 <a href="/">Trang chủ</a>
                             </li>
-                            <li>
+                            <li {!! (Route::is('webbanggia') ? 'class="current-menu-item"' : '') !!}>
                                 <a href="/bang-gia">Bảng giá</a>
                             </li>
-                            <li>
+                            <li {!! (Route::is('webchinhsach') ? 'class="current-menu-item"' : '') !!}>
                                 <a href="/chinh-sach">Chính sách</a>
                             </li>
                             <li class="taichinh has-dropdown">
