@@ -97,3 +97,7 @@ $(".sidebar .sidebar-menu > li.menu-item-has-children > a").click(function (e) {
     }
 
 });
+
+$('.modal-footer .btn-close').click(function () {
+    $('#modal').hide();
+})

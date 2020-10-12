@@ -19,7 +19,6 @@
     @include('components.header')
     @yield('content')
     @include('components.footer')
-    @include('components.modal')
 </body>
 <script src="{{ asset('public/libs/jquery-validation/lib/jquery-3.1.1.js') }}"></script>
 <script src="{{ asset('public/js/app.js') }}"></script>

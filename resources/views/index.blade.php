@@ -233,4 +233,5 @@
             </div>
         </div>
     </main>
+    @include('components.modal')
 @endsection
