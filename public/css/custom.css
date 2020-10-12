@@ -157,3 +157,103 @@
         left: -100%;
     }
 }
+.services .title {
+    color: #005b8e;
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0;
+}
+.services {
+    padding: 0 120px;
+    padding-bottom: 40px;
+}
+.list-service {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.service-item {
+    padding: 0 20px;
+}
+.service-item img {
+    margin: auto;
+}
+.service-item:nth-child(2) {
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+.service-item .capture {
+    color: #005b8e;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.service-item .sub-capture {
+    color: #005b8e;
+    font-size: 16px;
+}
+.service-item ul {
+    list-style-image: url(https://vanchuyenphongvu.vn/wp-content/uploads/2019/08/service-item.png);
+    margin: 0 20px;
+}
+.service-item ul li {
+    color: #005b8e;
+    font-size: 16px;
+    margin-top: 24px;
+}
+.service-item-heaader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 1400px) {
+    .services {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .list-service {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .service-item:nth-child(2) {
+        border: none;
+        border-top: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+    }
+    .service-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+#footer .ft-sys {
+    background-color: #062648;
+}
+.footer-container {
+    color: white;
+    background-color: #00406b;
+    padding: 0 40px;
+}
+.list-storage {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.storage-item {
+    flex: 1;
+}
+.storage-item img {
+    margin-top: 10px;
+}
+.storage-item p {
+    font-size: 16px;
+}
+.storage-item .storage-name {
+    color: #55c5cf;
+    font-size: 18px;
+}
+@media only screen and (max-width: 896px) {
+    .list-storage {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
