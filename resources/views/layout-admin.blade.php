@@ -1,20 +1,21 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <title>Trường Tín | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/admin.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
-    <script src="{{ asset('libs/jquery-validation/lib/jquery-3.1.1.js') }}"></script>
-    <script src="{{ asset('libs/jquery-validation/jquery.validate.js') }}"></script>
+    <script src="{{ asset('public/libs/jquery-validation/lib/jquery-3.1.1.js') }}"></script>
+    <script src="{{ asset('public/libs/jquery-validation/jquery.validate.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
-    <script src="{{ asset('js/admin.js') }}"></script>
+    <script src="{{ asset('public/js/admin.js') }}"></script>
 </head>
 <body>
 <div class="header">
-    <img src="/images/header-logo.png" class="header-logo"/>
+    <img src="/public/images/header-logo.png" class="header-logo"/>
     <div class="header-right">
-        <img src="/images/admin-avatar.jpg" alt=""/>
+        <img src="/public/images/admin-avatar.jpg" alt=""/>
         <p class="username">Admin</p>
         <a class="btn-logout" href="/admin/logout">Đăng xuất</a>
     </div>

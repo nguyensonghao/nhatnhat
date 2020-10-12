@@ -4,7 +4,7 @@
             <div class="logo">
                 <div class="img">
                     <a href="">
-                        <img src="/images/footer-logo.png" alt=""></a>
+                        <img src="/public/images/footer-logo.png" alt=""></a>
                 </div>
             </div>
             <div class="navct-wrap">

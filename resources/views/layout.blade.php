@@ -12,8 +12,8 @@
     <meta property="og:site_name">
     <meta property="og:description">
     <title>@yield('title')</title>
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
     @include('components.header')
@@ -21,6 +21,6 @@
     @include('components.footer')
     @include('components.modal')
 </body>
-<script src="{{ asset('libs/jquery-validation/lib/jquery-3.1.1.js') }}"></script>
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('public/libs/jquery-validation/lib/jquery-3.1.1.js') }}"></script>
+<script src="{{ asset('public/js/app.js') }}"></script>
 </html>

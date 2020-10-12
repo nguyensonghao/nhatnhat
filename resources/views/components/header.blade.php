@@ -3,7 +3,7 @@
         <div class="hd-main">
             <div class="logo">
                 <div class="img">
-                    <a href="/"><img src="/images/header-logo.png" alt="header logo"></a>
+                    <a href="/"><img src="/public/images/header-logo.png" alt="header logo"></a>
                 </div>
             </div>
             <div class="hd-right">
@@ -29,7 +29,7 @@
                         </div>
                         <div class="hdt__info-block">
                             <div class="img">
-                                <img src="/images/hd-top-icon3.png" alt="">
+                                <img src="/public/images/hd-top-icon3.png" alt="">
                             </div>
                             <div class="ct"><p class="tt">Giờ Làm Việc&nbsp;</p><p>9h00 - 19h00</p></div>
                         </div>

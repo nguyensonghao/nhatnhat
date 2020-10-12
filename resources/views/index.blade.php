@@ -40,7 +40,7 @@
                     <li class="ps__child">
                         <div class="present-card">
                             <div class="img">
-                                <img src="/images/present-icon1.png" alt="">
+                                <img src="/public/images/present-icon1.png" alt="">
                             </div>
                             <div class="ct">
                                 <h4 class="hd">5</h4>
@@ -51,7 +51,7 @@
                     <li class="ps__child">
                         <div class="present-card">
                             <div class="img">
-                                <img src="images/present-icon2.png" alt="">
+                                <img src="/public/images/present-icon2.png" alt="">
                             </div>
                             <div class="ct">
                                 <h4 class="hd">2,221</h4>
@@ -62,7 +62,7 @@
                     <li class="ps__child">
                         <div class="present-card">
                             <div class="img">
-                                <img src="images/present-icon3.png" alt="">
+                                <img src="/public/images/present-icon3.png" alt="">
                             </div>
                             <div class="ct">
                                 <h4 class="hd">6,288</h4>
@@ -111,7 +111,7 @@
 
                             <div class="navct-desc" id="order1">
                                 <div class="icon">
-                                    <img src="/images/step-icon1.png" alt="">
+                                    <img src="/public/images/step-icon1.png" alt="">
                                 </div>
                                 <h3 class="hd">Đăng ký tài khoản</h3>
                                 <p>
@@ -119,19 +119,19 @@
                                 </p>
                                 <a href="/dang-ky" class="mn-btn btn-bg">Đăng ký</a>
                                 <div class="img">
-                                    <img src="/images/step-img1.png" alt="">
+                                    <img src="/public/images/step-img1.png" alt="">
                                 </div>
                             </div>
                             <div class="navct-desc" id="order2" style="display: none;">
                                 <div class="icon">
-                                    <img src="/images/services-icon1.png" alt="">
+                                    <img src="/public/images/services-icon1.png" alt="">
                                 </div>
                                 <h3 class="hd">Cài đặt công cụ mua hàng</h3>
                                 <p>
                                     Click vào cài đặt công cụ đặt hàng của Nhất Nhất Logistics. Công cụ hỗ trợ đặt hàng các website taobao, tmall, 1688.
                                 </p>
                                 <div class="img">
-                                    <img src="/images/step-img1.png" alt="">
+                                    <img src="/public/images/step-img1.png" alt="">
                                 </div>
                             </div>
                             <div class="navct-desc" id="order3" style="display: none;">
@@ -140,7 +140,7 @@
                                     Truy cập vào các trang mua sắm Taobao.com, Tmall.com, 1688.com … chọn hàng và thêm hàng vào giỏ.
                                 </p>
                                 <div class="img">
-                                    <img src="/images/step-img1.png" alt="">
+                                    <img src="/public/images/step-img1.png" alt="">
                                 </div>
                             </div>
                             <div class="navct-desc" id="order4" style="display: none;">
@@ -149,7 +149,7 @@
                                     Quay lại website nhatnhatlogistics.com và kiểm tra giỏ hàng Click vào “Gửi đơn hàng” để tạo đơn hàng,chờ xác nhận đặt hàng thành công.
                                 </p>
                                 <div class="img">
-                                    <img src="/images/step-img1.png" alt="">
+                                    <img src="/public/images/step-img1.png" alt="">
                                 </div>
                             </div>
                             <div class="navct-desc" id="order5" style="display: none;">
@@ -158,7 +158,7 @@
                                     Kiểm tra đơn hàng và đặt cọc tiền hàng qua hình thức chuyển khoản hoặc trực tiếp tại các văn phòng giao dịch gần nhất của Nhất Nhất Logistics.
                                 </p>
                                 <div class="img">
-                                    <img src="/images/step-img1.png" alt="">
+                                    <img src="/public/images/step-img1.png" alt="">
                                 </div>
                             </div>
                             <div class="navct-desc" id="order6" style="display: none;">
@@ -167,7 +167,7 @@
                                     Quý khách nhận được thông báo hàng về Việt Nam. Quý khách thanh toán số tiền còn  thiếu qua hình thức chuyển khoản hoặc trực tiếp. Sau khi thanh toán quý khách hàng có thể yêu cầu ship hàng hoặc trực tiếp nhận hàng tại kho của Nhất Nhất Logistics.
                                 </p>
                                 <div class="img">
-                                    <img src="/images/step-img1.png" alt="">
+                                    <img src="/public/images/step-img1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -188,7 +188,7 @@
                         <div class="benefit-card">
                             <div class="img">
                                 <a href="javascript:;">
-                                    <img src="/images/benefit-img1.jpg" alt="">
+                                    <img src="/public/images/benefit-img1.jpg" alt="">
                                 </a>
                             </div>
                             <div class="content">
@@ -203,7 +203,7 @@
                         <div class="benefit-card">
                             <div class="img">
                                 <a href="javascript:;">
-                                    <img src="/images/benefit-img2.jpg" alt="">
+                                    <img src="/public/images/benefit-img2.jpg" alt="">
                                 </a>
                             </div>
                             <div class="content">
@@ -218,7 +218,7 @@
                         <div class="benefit-card">
                             <div class="img">
                                 <a href="javascript:;">
-                                    <img src="/images/benefit-img3.jpg" alt="">
+                                    <img src="/public/images/benefit-img3.jpg" alt="">
                                 </a>
                             </div>
                             <div class="content">
