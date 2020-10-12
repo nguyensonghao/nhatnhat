@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Nhất nhất')
+@section('title', 'Trường Tín')
 @section('content')
     <main id="home">
         <div class="banner">

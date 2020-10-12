@@ -49,11 +49,7 @@
     </div>
     <div class="ft-sys">
         <div class="all center-txt">
-            © Bản quyền thuộc về Nhất Nhất. Thiết kế website bởi
-            <img src="https://mona-media.com/logo.png" style="width: 20px; vertical-align: sub;" alt="MonaMedia">
-            <a href="https://mona-media.com/" title="Mona Media">
-                <strong>Mona Media</strong>
-            </a>
+            © Bản quyền thuộc về Trường Tín.
         </div>
     </div>
 </footer>

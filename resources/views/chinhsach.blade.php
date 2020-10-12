@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Chính sách')
+@section('title', 'Trường Tín | Chính sách')
 @section('content')
     <main id="home" class="chinh-sach-page">
         <div class="banner">

@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Bảng giá')
+@section('title', 'Trường Tín | Bảng giá')
 @section('content')
     <main id="home" class="bang-gia-page">
         <div class="banner">

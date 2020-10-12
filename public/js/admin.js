@@ -63,14 +63,14 @@ $(document).ready(function () {
     })
 
     $('#form-setup-noti #content').summernote({
-        height: '280px'
+        height: '500px'
     });
 
     $('#form-update-chinhsach #content').summernote({
-        height: '380px'
+        height: '500px'
     });
 
     $('#form-update-banggia #content').summernote({
-        height: '600px'
+        height: '500px'
     });
 })
