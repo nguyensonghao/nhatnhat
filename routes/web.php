@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', [
-    'as' => 'home',
-    'uses'=> 'UserController@showHomePage'
-]);
+Route::get('/', function () {
+    return view('template');
+});
+
+//Route::get('/', [
+//    'as' => 'home',
+//    'uses'=> 'UserController@showHomePage'
+//]);
 
 Route::get('/bang-gia', [
     'as' => 'webbanggia',
