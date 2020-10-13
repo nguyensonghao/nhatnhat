@@ -7,12 +7,12 @@
         <legend>Chỉnh sửa chính sách cho website</legend>
         <textarea rows="10" class="input mt-20" name="content" id="content">{{$content}}</textarea>
         @if(Session::get('success'))
-            <div class="message-success">
+            <div class="alert alert-success">
                 {{Session::get('success')}}
             </div>
         @endif
         @if(Session::get('error'))
-            <div class="message-error">
+            <div class="alert alert-danger">
                 {{Session::get('error')}}
             </div>
         @endif

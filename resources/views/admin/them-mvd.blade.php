@@ -16,12 +16,12 @@
             </div>
         </div>
         @if(Session::get('success'))
-            <div class="message-success">
+            <div class="alert alert-success">
                 {{Session::get('success')}}
             </div>
         @endif
         @if(Session::get('error'))
-            <div class="message-error">
+            <div class="alert alert-danger">
                 {{Session::get('error')}}
             </div>
         @endif

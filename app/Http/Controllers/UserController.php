@@ -30,4 +30,14 @@ class UserController extends Controller
 
         return view('banggia')->with('content', $content);
     }
+
+    public function gioithieu() {
+        $storage = Storage::where('key', 'gioithieu')->first();
+        $content = '';
+        if ($storage) {
+            $content = $storage->value;
+        }
+
+        return view('gioithieu')->with('content', $content);
+    }
 }

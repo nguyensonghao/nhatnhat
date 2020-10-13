@@ -11,14 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('template');
-});
-
-//Route::get('/', [
-//    'as' => 'home',
-//    'uses'=> 'UserController@showHomePage'
-//]);
+Route::get('/', [
+    'as' => 'home',
+    'uses'=> 'UserController@showHomePage'
+]);
 
 Route::get('/bang-gia', [
     'as' => 'webbanggia',
@@ -28,6 +24,11 @@ Route::get('/bang-gia', [
 Route::get('/chinh-sach', [
     'as' => 'webchinhsach',
     'uses' => 'UserController@chinhsach'
+]);
+
+Route::get('/gioi-thieu', [
+    'as' => 'webgioithieu',
+    'uses' => 'UserController@gioithieu'
 ]);
 
 Route::get('/theo-doi-mvd', function () {
@@ -111,5 +112,67 @@ Route::prefix('admin')->group(function () {
         'as' => 'chinhsach',
         'middleware' => ['isLogin'],
         'uses'=> 'AdminController@actionSetupChinhSach'
+    ]);
+
+    Route::get('/gioi-thieu', [
+        'as' => 'gioithieu',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showSetupGioithieu'
+    ]);
+
+    Route::post('/gioi-thieu', [
+        'as' => 'gioithieu',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionSetupGioithieu'
+    ]);
+
+    Route::get('/thong-tin-chung', [
+        'as' => 'thongtinchung',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showSetupGeneral'
+    ]);
+
+    Route::post('/thong-tin-chung', [
+        'as' => 'thongtinchung',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionSetupGeneral'
+    ]);
+
+    Route::get('/thong-tin-chung', [
+        'as' => 'thongtinchung',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showSetupGeneral'
+    ]);
+
+    Route::get('/thong-tin-kho', [
+        'as' => 'thongtinkho',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showListThongTinKho'
+    ]);
+
+    Route::get('/them-thong-tin-kho', [
+        'as' => 'themthongtinkho',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showAddThongTinKho'
+    ]);
+
+    Route::post('/them-thong-tin-kho', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionAddThongTinKho'
+    ]);
+
+    Route::get('/xoa-thong-tin-kho/{id}', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@removeThongTinKho'
+    ]);
+
+    Route::get('/chinhsua-thong-tin-kho/{id}', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showEditThongTinKho'
+    ]);
+
+    Route::post('/chinhsua-thong-tin-kho', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionEditThongTinKho'
     ]);
 });

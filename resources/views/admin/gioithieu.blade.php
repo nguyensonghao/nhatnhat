@@ -1,10 +1,10 @@
 @extends('layout-admin')
-@section('title', 'Bảng giá')
-@section('title-page', 'Bảng giá')
+@section('title', 'Giới thiệu')
+@section('title-page', 'Giới thiệu')
 @section('content')
-    <form class="form-setup-noti" id="form-update-banggia" method="post" action="/admin/bang-gia">
+    <form class="form-setup-noti" id="form-update-chinhsach" method="post" action="/admin/gioi-thieu">
         {{ csrf_field() }}
-        <legend>Chỉnh sửa bảng giá cho website</legend>
+        <legend>Chỉnh sửa giới thiệu cho website</legend>
         <textarea rows="10" class="input mt-20" name="content" id="content">{{$content}}</textarea>
         @if(Session::get('success'))
             <div class="alert alert-success">

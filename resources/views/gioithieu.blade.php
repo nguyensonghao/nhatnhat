@@ -1,5 +1,5 @@
 @extends('template')
-@section('title', 'Trường Tín | Chính sách')
+@section('title', 'Trường Tín | Giới thiệu')
 @section('content')
     <div class="page-template-bang-gia">
         <main id="main" class="main-content home">

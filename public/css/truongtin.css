@@ -5040,7 +5040,9 @@ input[type=submit],
 .header-top-right .cart a:hover {
     color: #f17d59;
 }
-
+.main-menu > li:not(.active):hover:before {
+    display: none !important;
+}
 .price-list-wrapper .price-list-content .btn-more a:hover,
 .content-archive-wapper .content-archive .post-content .mys-button a:hover,
 .main-menu>li:not(.active):before,

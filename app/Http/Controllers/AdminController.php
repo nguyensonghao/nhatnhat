@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 use App\Storage;
 use App\Vantaihang;
+use App\Thongtinkho;
 
 
 class AdminController extends Controller
@@ -157,5 +158,115 @@ class AdminController extends Controller
         } else {
             return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa chính sách.');
         }
+    }
+
+    public function showSetupGioiThieu() {
+        $nofi = Storage::where('key', 'gioithieu')->first();
+        $content = '';
+        if ($nofi) {
+            $content = $nofi->value;
+        }
+        return view('admin.gioithieu')->with('content', $content);
+    }
+
+    public function actionSetupGioiThieu(Request $request) {
+        $storage = Storage::where('key', 'gioithieu')->first();
+        if (!$storage) {
+            $storage = new Storage();
+        }
+
+        $storage->key = 'gioithieu';
+        $storage->value = $request['content'];
+        if ($storage->save()) {
+            return back()->with('success', 'Chỉnh sửa giới thiệu thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa giới thiệu.');
+        }
+    }
+
+    public function showSetupGeneral() {
+        $nofi = Storage::where('key', 'thongtinchung')->first();
+        $value = [
+            'hotline' => '',
+            'facebook' => '',
+            'zalo' => '',
+            'email' => ''
+        ];
+        try {
+            if ($nofi) {
+                $value = json_decode($nofi->value);
+            }
+        } catch (Exception $e) {
+        }
+
+        return view('admin.thongtinchung')->with('general', $value);
+    }
+
+    public function actionSetupGeneral(Request $request) {
+        $storage = Storage::where('key', 'thongtinchung')->first();
+        if (!$storage) {
+            $storage = new Storage();
+        }
+
+        $storage->key = 'thongtinchung';
+        $storage->value = json_encode([
+            'hotline' => $request['hotline'],
+            'facebook' => $request['facebook'],
+            'zalo' => $request['zalo'],
+            'email' => $request['email']
+        ]);
+
+        if ($storage->save()) {
+            return back()->with('success', 'Chỉnh sửa thông tin chung thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa thông tin chung.');
+        }
+    }
+
+    public function showListThongTinKho() {
+        $list = Thongtinkho::all();
+        return view('admin.thongtinkho')->with('list', $list);
+    }
+
+    public function showAddThongTinKho() {
+        return view('admin.them-thongtinkho');
+    }
+
+    public function actionAddThongTinKho(Request $request) {
+        $kho = new Thongtinkho();
+        $kho->name = $request['name'];
+        $kho->email = $request['email'];
+        $kho->address = $request['address'];
+        $kho->phone = $request['phone'];
+        if ($kho->save()) {
+            return back()->with('success', 'Thêm thông tin kho thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình thêm thông tin kho.');
+        }
+    }
+
+    public function showEditThongTinKho($id) {
+        $kho = Thongtinkho::find($id);
+        return view('admin.chinhsua-thongtinkho')->with('kho', $kho);
+    }
+
+    public function actionEditThongTinKho(Request $request) {
+        $id = $request['id'];
+        $kho = Thongtinkho::find($id);
+        $kho->name = $request['name'];
+        $kho->email = $request['email'];
+        $kho->address = $request['address'];
+        $kho->phone = $request['phone'];
+        if ($kho->save()) {
+            return back()->with('success', 'Chỉnh sửa thông tin kho thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa thông tin kho.');
+        }
+    }
+
+    public function removeThongTinKho($id) {
+        $mvd = Thongtinkho::find($id);
+        $mvd->delete();
+        return back();
     }
 }

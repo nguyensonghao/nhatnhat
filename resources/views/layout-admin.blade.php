@@ -4,6 +4,7 @@
     <title>Trường Tín | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="{{ asset('public/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/admin.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
     <script src="{{ asset('public/libs/jquery-validation/lib/jquery-3.1.1.js') }}"></script>
@@ -42,6 +43,34 @@
             </li>
             <li {!! (Route::is('banggia') ? 'class="active"' : '') !!}>
                 <a href="/admin/bang-gia">Bảng giá</a>
+            </li>
+            <li {!! (Route::is('gioithieu') ? 'class="active"' : '') !!}>
+                <a href="/admin/gioi-thieu">Giới thiệu</a>
+            </li>
+            <li {!! (Route::is('thongtinchung') ? 'class="active"' : '') !!}>
+                <a href="/admin/thong-tin-chung">Cài đặt thông tin chung</a>
+            </li>
+            <li {!! (Route::is('nganhang') ? 'class="active"' : '') !!}>
+                <a>Ngân hàng</a>
+                <ul class="menu-child">
+                    <li {!! (Route::is('nganhang') ? 'class="active"' : '') !!}>
+                        <a href="/admin">Danh sách</a>
+                    </li>
+                    <li {!! (Route::is('themmnganhang') ? 'class="active"' : '') !!}>
+                        <a href="/admin/them-mvd">Thêm</a>
+                    </li>
+                </ul>
+            </li>
+            <li {!! (Route::is('thongtinkho') ? 'class="active"' : '') !!}>
+                <a>Thông tin kho</a>
+                <ul class="menu-child">
+                    <li {!! (Route::is('thongtinkho') ? 'class="active"' : '') !!}>
+                        <a href="/admin/thong-tin-kho">Danh sách</a>
+                    </li>
+                    <li {!! (Route::is('themthongtinkho') ? 'class="active"' : '') !!}>
+                        <a href="/admin/them-thong-tin-kho">Thêm</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>

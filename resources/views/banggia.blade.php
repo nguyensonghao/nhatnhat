@@ -1,32 +1,30 @@
-@extends('layout')
+@extends('template')
 @section('title', 'Trường Tín | Bảng giá')
 @section('content')
-    <main id="home" class="bang-gia-page">
-        <div class="banner">
-            <div class="sticky">
-                <div class="all" style="width: 100%;">
-                    <ul class="stick-announ" style="display: none">
-                    </ul>
-                    <p class="marquee">
-                        <span class="item-marquee">
-                            <a href="#" class="">Những Gì Bạn Cần Chúng Tôi Có  -  Những gì Chúng Tôi Không Có Bạn Không Cần</a>
-                        </span>
-                        <span class="item-marquee">
-                            <a href="#" class="">Cảm    Ơn    Quý    Khách    Đã    Sử    Dụng    Dịch    Vụ    Của    Chúng    Tôi .  </a>
-                        </span>
-                    </p>
+    <div class="page-template-bang-gia">
+        <main id="main" class="main-content home">
+            <article id="post-379" class="single-post-article clearfix  post-379 page type-page status-publish hentry">
+                <div class="content-default single-post-wapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="content-layout content-blog col-12">
+                                <div class="inner-content-post">
+                                    {!! $content !!}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="sec-above">
-            <h3 class="tt-txt">
-                <span id="ContentPlaceHolder1_lblTitle">Bảng giá</span></h3>
-            <div class="line-br">
-                <span class="line__icon"></span>
-            </div>
-        </div>
-        <div class="chinhsach-content">
-            {!! $content !!}
-        </div>
-    </main>
+            </article>
+        </main>
+    </div>
+    <style>
+        body {
+            background: #fafafa;
+        }
+        .inner-content-post img {
+            margin: auto !important;
+            max-width: 100%;
+        }
+    </style>
 @endsection
