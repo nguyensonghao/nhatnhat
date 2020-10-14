@@ -15,6 +15,7 @@
     <title>@yield('title')</title>
     <link href="{{ asset('public/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="{{ asset('public/css/truongtin.css') }}" rel="stylesheet">
 </head>
 <body>

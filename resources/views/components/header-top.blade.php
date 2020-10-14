@@ -2,11 +2,13 @@
     $general = \App\Storage::where('key', 'thongtinchung')->first();
     $hotline = '096.247.1688';
     $email = 'truongtinlogistics@gmail.com';
+    $facebook = '';
     if ($general && $general->value) {
         $config = json_decode($general->value);
         try {
             $hotline = $config->hotline;
             $email = $config->email;
+            $facebook = $config->facebook;
         } catch (Exception $e) {
 
         }

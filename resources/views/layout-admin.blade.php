@@ -61,7 +61,7 @@
                     </li>
                 </ul>
             </li>
-            <li {!! (Route::is('thongtinkho') ? 'class="active"' : '') !!}>
+            <li>
                 <a>Thông tin kho</a>
                 <ul class="menu-child">
                     <li {!! (Route::is('thongtinkho') ? 'class="active"' : '') !!}>
@@ -69,6 +69,17 @@
                     </li>
                     <li {!! (Route::is('themthongtinkho') ? 'class="active"' : '') !!}>
                         <a href="/admin/them-thong-tin-kho">Thêm</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Thông tin thanh toán</a>
+                <ul class="menu-child">
+                    <li {!! (Route::is('thongtinthanhtoan') ? 'class="active"' : '') !!}>
+                        <a href="/admin/thong-tin-thanh-toan">Danh sách</a>
+                    </li>
+                    <li {!! (Route::is('themthongtinkho') ? 'class="active"' : '') !!}>
+                        <a href="/admin/them-thong-tin-thanh-toan">Thêm</a>
                     </li>
                 </ul>
             </li>

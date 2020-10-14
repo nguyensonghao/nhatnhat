@@ -4,9 +4,9 @@
     <main id="main" class="main-content home" style="padding-top: 0">
         <section class="extension-wrapper">
             <div class="slider-custom">
-                <div><img src="public/images/sliders/slider1.jpg" alt="Trường Tín"/></div>
-                <div><img src="public/images/sliders/slider1.jpg" alt="Trường Tín"/></div>
-                <div><img src="public/images/sliders/slider1.jpg" alt="Trường Tín"/></div>
+                <div class="slider-item"><img src="public/images/sliders/slider1.jpg" alt="Trường Tín"/></div>
+                <div class="slider-item"><img src="public/images/sliders/slider2.jpg" alt="Trường Tín"/></div>
+                <div class="slider-item"><img src="public/images/sliders/slider3.jpg" alt="Trường Tín"/></div>
             </div>
         </section>
         <section class="process-wrapper">
@@ -144,31 +144,22 @@
                                 <h3 class="title">HỖ TRỢ KHÁCH HÀNG</h3>
                             </div>
                             <div class="support-content row">
-                                <div class="item col-6">
+                                <div class="item col-12">
                                     <a href="http://zalo.me/096.247.1688" target="_blank" rel="nofollow">
-                                        <img src="https://nhaphangchina.vn/images/zalo.png" alt="Hỗ trợ khách hàng">
+                                        <img src="public/images/icon-hotline.jpg" alt="Hỗ trợ khách hàng">
                                     </a>
                                     <div class="item-info">
-                                        <b>Ms Hương</b>
-                                        <p>096.247.1688</p>
+                                        <b>Hot line</b>
+                                        <p>{{$general->hotline}}</p>
                                     </div>
                                 </div>
-                                <div class="item col-6">
-                                    <a href="http://zalo.me/096.827.1688" target="_blank" rel="nofollow">
-                                        <img src="https://nhaphangchina.vn/images/zalo.png" alt="Hỗ trợ khách hàng">
+                                <div class="item col-12">
+                                    <a href="http://zalo.me/096.247.1688" target="_blank" rel="nofollow">
+                                        <img src="public/images/email.png" alt="Hỗ trợ khách hàng">
                                     </a>
                                     <div class="item-info">
-                                        <b>Ms Diệp</b>
-                                        <p>096.827.1688</p>
-                                    </div>
-                                </div>
-                                <div class="item col-6">
-                                    <a href="http://zalo.me/0979.239.526" target="_blank" rel="nofollow">
-                                        <img src="https://nhaphangchina.vn/images/zalo.png" alt="Hỗ trợ khách hàng">
-                                    </a>
-                                    <div class="item-info">
-                                        <b>Ms Thoa</b>
-                                        <p>0979.239.526</p>
+                                        <b>Email</b>
+                                        <p>{{$general->email}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -187,36 +178,20 @@
                     </div>
                     <div class="col-12">
                         <div class="pay-content row">
-                            <div class="item col-12 col-sm-6 col-lg-4">
-                                <div class="item-content">
-                                    <div class="item-image"><img src="https://nhaphangchina.vn/images/Vietcombank.png" alt="Đặng Anh Tú"></div>
-                                    <div class="pay-info">
-                                        <h5 class="pay-info-name mt-0">Đặng Anh Tú</h5>
-                                        <div class="pay-info-stk"><small>STK:</small>0491000416368</div>
-                                        <div class="pay-info-branch"><small>Chi Nhánh:</small>Hà Nội</div>
+                            @foreach($listPayment as $payment)
+                                <div class="item col-12 col-sm-6 col-lg-4">
+                                    <div class="item-content">
+                                        <div class="item-image">
+                                            <img src="public/uploads/payment_{{$payment->id}}.png?version={{time()}}" alt="{{$payment->owner}}">
+                                        </div>
+                                        <div class="pay-info">
+                                            <h5 class="pay-info-name mt-0">{{$payment->owner}}</h5>
+                                            <div class="pay-info-stk"><small>STK:</small>{{$payment->stk}}</div>
+                                            <div class="pay-info-branch"><small>Chi Nhánh:</small>{{$payment->chinhanh}}</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item col-12 col-sm-6 col-lg-4">
-                                <div class="item-content">
-                                    <div class="item-image"><img src="https://nhaphangchina.vn/images/BIDV.png" alt="Đặng Anh Tú"></div>
-                                    <div class="pay-info">
-                                        <h5 class="pay-info-name mt-0">Đặng Anh Tú</h5>
-                                        <div class="pay-info-stk"><small>STK:</small>12910000225952</div>
-                                        <div class="pay-info-branch"><small>Chi Nhánh:</small>Hà Nội</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item col-12 col-sm-6 col-lg-4">
-                                <div class="item-content">
-                                    <div class="item-image"><img src="https://nhaphangchina.vn/images/Techcombank.png" alt="Đặng Anh Tú"></div>
-                                    <div class="pay-info">
-                                        <h5 class="pay-info-name mt-0">Đặng Anh Tú</h5>
-                                        <div class="pay-info-stk"><small>STK:</small>19034822822013</div>
-                                        <div class="pay-info-branch"><small>Chi Nhánh:</small>Hà Nội</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\User;
+use App\Payment;
 use App\Storage;
 use App\Vantaihang;
 use App\Thongtinkho;
@@ -186,7 +187,7 @@ class AdminController extends Controller
 
     public function showSetupGeneral() {
         $nofi = Storage::where('key', 'thongtinchung')->first();
-        $value = [
+        $value = (object) [
             'hotline' => '',
             'facebook' => '',
             'zalo' => '',
@@ -266,6 +267,59 @@ class AdminController extends Controller
 
     public function removeThongTinKho($id) {
         $mvd = Thongtinkho::find($id);
+        $mvd->delete();
+        return back();
+    }
+
+    public function showListThongTinThanhToan() {
+        $list = Payment::all();
+        return view('admin.nganhang')->with('list', $list);
+    }
+
+    public function showAddThongTinThanhToan() {
+        return view('admin.them-nganhang');
+    }
+
+    public function actionAddThongTinThanhToan(Request $request) {
+        $payment = new Payment();
+        $payment->name = $request['name'];
+        $payment->owner = $request['owner'];
+        $payment->stk = $request['stk'];
+        $payment->chinhanh = $request['chinhanh'];
+        if ($payment->save()) {
+            $fileName = 'payment_' . $payment->id . '.png';
+            $request->file('image')->move(public_path('uploads'), $fileName);
+            return back()->with('success', 'Thêm thông tin thanh toán thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình thêm thông tin thanh toán.');
+        }
+    }
+
+    public function showEditThongTinThanhToan($id) {
+        $payment = Payment::find($id);
+        return view('admin.chinhsua-nganhang')->with('payment', $payment);
+    }
+
+    public function actionEditThongTinThanhToan(Request $request) {
+        $id = $request['id'];
+        $payment = Payment::find($id);
+        $payment->name = $request['name'];
+        $payment->owner = $request['owner'];
+        $payment->stk = $request['stk'];
+        $payment->chinhanh = $request['chinhanh'];
+        if ($payment->save()) {
+            if ($request->hasFile('image')) {
+                $fileName = 'payment_' . $payment->id . '.png';
+                $request->file('image')->move(public_path('uploads'), $fileName);
+            }
+            return back()->with('success', 'Chỉnh sửa thông tin thanh toán thành công.');
+        } else {
+            return back()->with('error', 'Có lỗi trong quá trình chỉnh sửa thông tin thanh toán.');
+        }
+    }
+
+    public function removeThongTinThanhToan($id) {
+        $mvd = Payment::find($id);
         $mvd->delete();
         return back();
     }

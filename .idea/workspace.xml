@@ -20,23 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10872866-a649-4d00-9d9b-fecbbc02bdfe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/nhatnhat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nhatnhat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/truongtin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/truongtin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/baner-footer-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/baner-footer-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg-extension.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bg-extension.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/checked.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/checked.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/crupto.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/crupto.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/delivery-truck.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/delivery-truck.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/delivery.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/delivery.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/hr.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/hr.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo_china.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo_china.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/package.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/package.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/packing-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/packing-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/sliders/slider1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/sliders/slider1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/sliders/slider2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/steps.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/steps.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/tracking.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/tracking.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/world-map.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/world-map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/truongtin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/truongtin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/banggia.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/banggia.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/chinhsach.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/chinhsach.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/chinhsua-mvd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/chinhsua-mvd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/them-mvd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/them-mvd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/thongbao.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/thongbao.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/banggia.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/banggia.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chinhsach.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chinhsach.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/header-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout-admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout-admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template.blade.php" afterDir="false" />
@@ -49,9 +59,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -160,27 +168,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/fonts" />
-      <recent name="$PROJECT_DIR$/public/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\HaoNguyen\Xampp7\htdocs\nhatnhatlogistics\public\images" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/images/sliders" />
+      <recent name="$PROJECT_DIR$/public/images/sliders/slider3.jpg" />
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -188,7 +185,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -213,19 +210,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602657430081">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1000/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602657430081" />
     <state x="2570" y="278" width="620" height="522" key="find.popup" timestamp="1602584822295">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2570" y="278" width="620" height="522" key="find.popup/0.27.1920.1000/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602584822295" />
+    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1602649234033">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup/0.27.1920.1000/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602649234033" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -175,4 +175,42 @@ Route::prefix('admin')->group(function () {
         'middleware' => ['isLogin'],
         'uses'=> 'AdminController@actionEditThongTinKho'
     ]);
+
+    Route::get('/thong-tin-kho', [
+        'as' => 'thongtinkho',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showListThongTinKho'
+    ]);
+
+    Route::get('/thong-tin-thanh-toan', [
+        'as' => 'thongtinthanhtoan',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showListThongTinThanhToan'
+    ]);
+
+    Route::get('/them-thong-tin-thanh-toan', [
+        'as' => 'themthongtinthanhtoan',
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showAddThongTinThanhToan'
+    ]);
+
+    Route::post('/them-thong-tin-thanh-toan', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionAddThongTinThanhToan'
+    ]);
+
+    Route::get('/xoa-thong-tin-thanh-toan/{id}', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@removeThongTinThanhToan'
+    ]);
+
+    Route::get('/chinhsua-thong-tin-thanh-toan/{id}', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@showEditThongTinThanhToan'
+    ]);
+
+    Route::post('/chinhsua-thong-tin-thanh-toan', [
+        'middleware' => ['isLogin'],
+        'uses'=> 'AdminController@actionEditThongTinThanhToan'
+    ]);
 });

@@ -5153,3 +5153,13 @@ h6 {
 .extension-wrapper {
     overflow: hidden;
 }
+.main-menu li.active a {
+    color: #ef7d59 !important;
+}
+.slider-item img {
+    width: 100%;
+}
+.slider-custom {
+    width: 100%;
+    height: 100%;
+}

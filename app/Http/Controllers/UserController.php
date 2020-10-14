@@ -4,11 +4,29 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Storage;
+use App\Payment;
 
 class UserController extends Controller
 {
     public function showHomePage() {
-        return view('index');
+        $listPayment = Payment::all();
+        $nofi = Storage::where('key', 'thongtinchung')->first();
+        $general = (object) [
+            'hotline' => '',
+            'email' => ''
+        ];
+
+        try {
+            if ($nofi) {
+                $general = json_decode($nofi->value);
+            }
+        } catch (Exception $e) {
+            $general = (object) [
+                'hotline' => '',
+                'email' => ''
+            ];
+        }
+        return view('index')->with('listPayment', $listPayment)->with('general', $general);
     }
 
     public function chinhsach() {
