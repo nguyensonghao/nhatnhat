@@ -16,8 +16,6 @@
 <div class="header">
     <img src="/public/images/header-logo.png" class="header-logo"/>
     <div class="header-right">
-        <img src="/public/images/admin-avatar.jpg" alt=""/>
-        <p class="username">Admin</p>
         <a class="btn-logout" href="/admin/logout">Đăng xuất</a>
     </div>
 </div>
